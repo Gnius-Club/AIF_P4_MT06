@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P4-TM06</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 6 4to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Cutebot & A.I. Lens (Color) & tu plan (el GCS): Reaccionar a color específico (SI leer_lente_IA_color() == "ROJO"). Usar color card(s)' info: X.</li>
+                                        <li>IA: Robot decide por "visión" IA (color y posición).</li>
+                                        <li>Parte de la Currícula de IA cubierta: AIA: Introducción al ML (Conceptual): Usar datos de posición.</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes programen al Cutebot para que no solo reconozca un color específico usando la Smart A.I. Lens, sino que también reaccione de una manera particular a ese color, introduciendo conceptualmente el uso de datos adicionales (como la posición X del color detectado) que la IA puede proporcionar.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ Actividad 1: Saludo de I.A. con todos</li>
+                                        <li>⚡ Actividad 2: I Can Statement + Ejemplificación</li>
+                                        <li>⚡ Actividad 3: AI GYM</li>
+                                        <li>⚡ Actividad 4: Brain Spark</li>
+                                        <li>⚡ Actividad 5: Gnius STORM (Think-Pair-Share)</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Programa en Micro:bit donde el Cutebot, usando la Smart A.I. Lens, reconoce un color específico (ej. ROJO) y realiza una acción definida (ej. detenerse, encender LEDs), y opcionalmente reacciona a otro color (ej. VERDE) con una acción diferente. Creado a partir de tu plan (el GCS) y lógica condicional SI.</li>
+                                        <li>Participación en la discusión sobre cómo la IA usa información de color y posición para tomar decisiones.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                        <li>Robots Cutebot (1 por cada 2 estudiantes).</li>
+                                        <li>Smart A.I. Lens (1 por cada 2 estudiantes, conectada al Cutebot).</li>
+                                        <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>), con extensión de A.I. Lens.</li>
+                                        <li>Tarjetas de colores (especialmente ROJO, VERDE, y opcionalmente AZUL, AMARILLO, NEGRO).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de MakeCode y la extensión de A.I. Lens.</li>
+                                                <li>Asegurar disponibilidad, carga y conexión de Cutebots, A.I. Lens y Micro:bits.</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional tu proyecto de ejemplo (Cutebot que al mostrarle una tarjeta roja se detiene y enciende LEDs rojos, y al mostrarle una verde, avanza) para la demostración en la Actividad 2.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>El chatbot da la bienvenida y anticipa que Cutebot tomará decisiones basadas en lo que "ve".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Da la bienvenida a los alumnos, recordando la habilidad de la A.I. Lens para ver colores y adelantando el objetivo de hoy. Pídeles que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, artistas de la IA! Ya descubrimos que nuestra Smart A.I. Lens puede 'ver' y nombrar colores. Hoy vamos a dar un paso más: ¡haremos que nuestro Cutebot no solo vea un color, sino que también tome una decisión y actúe según el color que detecte! ¿Listos para que Cutebot reaccione al mundo con inteligencia visual? Antes de empezar, activen a Xolo. Salúdenlo en el chat con su nombre y sus gustos. Por ejemplo: 'Hola Xolo, soy [Nombre] y me gustan los semáforos y los coches de juguete'."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
+                            <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Perfecto! Xolo está listo para ayudarnos a programar las reacciones de Cutebot. Si alguien no ha recibido respuesta de Xolo, levante la mano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>Presentar cómo Cutebot puede reaccionar a colores específicos y el objetivo de la clase.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción y Contextualización ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3). Introduce la idea de que Cutebot haga algo especial según el color que vea (ROJO para detenerse, VERDE para avanzar).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hemos visto que la A.I. Lens nos dice qué color es una tarjeta. Pero, ¿qué tal si queremos que el Cutebot haga algo especial solo cuando ve, por ejemplo, el color ROJO? O que se mueva hacia el color AZUL. Hoy vamos a programar a Cutebot para que, cuando su lente IA identifique un color específico, realice una acción. Por ejemplo, si ve una tarjeta ROJA, podría detenerse, o si ve una VERDE, podría avanzar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Presentación del Proyecto del Profesor ⏰ 1 minuto</h3>
+                            <p>Muestra tu proyecto de ejemplo (Cutebot reaccionando a tarjeta roja y verde) ya cargado y funcionando. Esta es una demostración en vivo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Miren este ejemplo que preparé: (Muestra el Cutebot. Al presentarle una tarjeta roja, se detiene y enciende LEDs rojos. Al presentarle una verde, avanza). Mi 'idea (vibe)' fue que Cutebot reaccionara como un semáforo.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" y Conexión ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). Presenta formalmente el 'I Can Statement' y la idea de que la IA puede dar más información (posición).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Al final de la clase, podrán decir: '<strong>Yo puedo programar mi Cutebot para que, usando la Smart A.I. Lens, reconozca un color específico y realice una acción diferente basada en ese color, utilizando tu plan (el GCS) y una condición SI.</strong>' Y también empezaremos a pensar cómo la IA nos da más información además del color. ¡A programar reacciones inteligentes!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 7 minutos</h2>
+                <p>Introducir la lógica condicional para reaccionar a colores y el concepto de decisión basada en visión IA, incluyendo la información de posición X.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción Inicial y Contextualización de la IA ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da la instrucción para que los alumnos pidan la información a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, al A.I. GYM! 🧠💪 Xolo nos explicará cómo combinar el reconocimiento de colores con condiciones SI para que Cutebot reaccione, y cómo la IA puede darnos más pistas como la posición del color. Escriban en el chat: 'Mi perfil es [escribe aquí tus gustos/intereses] y quiero aprender cómo Cutebot reacciona a colores específicos y qué más información nos da la A.I. Lens'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción Guiada y Ejemplo de Plan (GCS) ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositivas 6 y 7). Monitorea a los alumnos. Xolo les explicará cómo usar `leer_lente_IA_color()` con `SI (condición) ENTONCES (acción)`, y mencionará que la IA también puede dar la posición X del color con `color card(s)' info: X`, útil para saber dónde está el objeto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Muy bien! Xolo les está explicando que para que Cutebot reaccione a un color, usamos `leer_lente_IA_color()` y una condición `SI`. Por ejemplo: `SI (leer_lente_IA_color() == "ROJO") ENTONCES cutebot_detener()`. Les dirá que esto es una decisión basada en la 'visión IA'. Y algo muy interesante: la IA de la lente no solo dice el color, ¡sino también dónde está ese color! Con `color card(s)' info: X`, sabríamos si está a la izquierda o derecha. Hoy nos enfocaremos en reaccionar al color, ¡pero es bueno saber que la IA nos da más pistas!</p>
+                                <p class="dialogue assistant">Para que vean un ejemplo de tu plan (el GCS) reaccionando a dos colores, Xolo podría mostrarles esto:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    Initialize AI-Lens
+    Switch function as Color
+    mostrar texto "Listo!"
+
+POR SIEMPRE:
+    fijar variable "color_actual" a leer_lente_IA_color()
+    SI (variable "color_actual" == "ROJO"):
+        cutebot_detener()
+    SINO SI (variable "color_actual" == "VERDE"):
+        cutebot_avanzar(40)
+    FIN SI
+    ESPERAR 0.1 segundos
+                                </pre>
+                                <p class="dialogue assistant">Si tienen dudas, ¡pregúntenle a Xolo! Por ejemplo: <br>
+                                <strong>* 'Xolo, ¿qué valores da la posición X?'</strong><br>
+                                <strong>* 'Si la lente ve una tarjeta azul a la izquierda, ¿cómo lo diría?'</strong> (Relacionar con sus gustos) <br>
+                                <strong>* '¿Para qué más serviría saber dónde está un color?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Ideación, traducción a tu plan (el GCS), implementación, prueba y discusión sobre la información de posición X.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción al Brain Spark ⏰ 1 minutos</h3>
+                            <p>(Proyectar Diapositiva 8). Presenta la actividad como la fase creativa principal. Recuerda a los alumnos que trabajarán en parejas y compartirán el material.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, artistas de la IA! Ahora al Brain Spark, donde programarán a Cutebot para que actúe según los colores que ve. Recuerden que trabajarán en parejas, así que necesitarán compartir el Cutebot, la A.I. Lens y el Micro:bit para programar y probar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación (La "idea (vibe)" de Reacción al Color) ⏰ 3 minutos</h3>
+                            <p>Anima a los alumnos a pensar en una 'idea (vibe)' individual de cómo quieren que su Cutebot reaccione a colores específicos. Deberán organizarse con su compañero para turnarse al programar y probar sus respectivas ideas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¿Cómo quieren que su Cutebot reaccione a los colores? Quizás: 'Quiero que mi Cutebot avance cuando vea una tarjeta VERDE y se detenga cuando vea una ROJA.' O 'Si mi Cutebot ve una tarjeta AZUL, quiero que encienda sus LEDs azules y gire a la izquierda.' ¡O pueden inventar un 'clasificador'! Piensen en su 'idea (vibe)' individual. Luego, hablen con su compañero para organizarse y decidir cómo se turnarán para usar el material para programar y probar cada una de sus ideas. Si necesitan inspiración, consulten a Xolo: 'Exploremos ideas juntos para que Cutebot reaccione a diferentes colores'."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Planificación con IA (El "plan (el GCS)") y Logística ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 9). Guía a los alumnos sobre cómo comunicar su 'idea (vibe)' a Xolo para obtener 'tu plan (el GCS)'. Asegúrate de que cada pareja tenga su material y tarjetas de colores.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Ya tienen su 'idea (vibe)' de reacción a colores? ¡Genial! Descríbansela a Xolo, y él les ayudará a estructurar las condiciones SI o SI...SINO SI... para los diferentes colores y a crear 'tu plan (el GCS)'. Por ejemplo, si su 'idea (vibe)' es: 'Reaccionar a ROJO y VERDE'.</p>
+                                <p class="dialogue assistant">Xolo podría generar 'tu plan (el GCS)' así:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    Initialize AI-Lens
+    Switch function as Color
+    mostrar texto "Veo colores!"
+
+POR SIEMPRE:
+    fijar variable "color_visto" a leer_lente_IA_color()
+
+    SI (variable "color_visto" == "ROJO"):
+        cutebot_detener()
+        cutebot_todos_los_led(ROJO)
+    SINO SI (variable "color_visto" == "VERDE"):
+        cutebot_avanzar(50)
+        cutebot_todos_los_led(VERDE)
+    SINO:
+        cutebot_apagar_leds()
+    FIN SI
+
+    ESPERAR 0.2 segundos
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Implementación, Prueba y Refinamiento (Conceptual sobre Posición X) ⏰ 11 minutos</h3>
+                            <p>Da tiempo a los alumnos para traducir 'tu plan (el GCS)' a bloques, enfocándose en las condiciones SI. Prueban con tarjetas de colores. Luego, guía una discusión sobre la utilidad de la información 'X' de la tarjeta de color (ej. para seguir un objeto de un color).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡A programar esas reacciones! Tomen 'tu plan (el GCS)' de Xolo y pásenlo a bloques en MakeCode. Usen las tarjetas de colores para probar. ¿Reacciona correctamente a cada color? ¿La acción es la que esperaban? Ahora, imaginen que quieren que el Cutebot no solo se detenga ante el ROJO, sino que gire hacia él si está un poco a un lado. La información 'X' de la tarjeta de color nos ayudaría a saber si girar a la izquierda o a la derecha. Aunque no lo programemos hoy, ¿se les ocurre cómo podría ser útil saber dónde está el color? (Ej. para seguir un objeto de un color). Recuerden turnarse.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Mejoras y Desafíos ⏰ 1 minutos</h3>
+                            <p>Ofrece desafíos adicionales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Su Cutebot ya toma decisiones basadas en colores? ¡Fantástico! Para un desafío extra: ¿Pueden añadir reacciones para más colores? ¿O hacer que la velocidad del Cutebot cambie según el color que ve? ¡Consulten con Xolo cómo podrían modificar 'tu plan (el GCS)'!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Los alumnos muestran cómo sus Cutebots reaccionan a colores y reflexionan sobre la IA y la información de posición.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10). Presenta la actividad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, programadores de robots con visión! Han hecho un gran trabajo en el Brain Spark. Ahora, en nuestro Gnius STORM, vamos a ver cómo sus Cutebots reaccionan inteligentemente a los colores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 0.5 minutos</h3>
+                            <p>Reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Antes de mostrarlo, piensen 30 segundos: <strong>¿Qué colores hace reaccionar a su Cutebot y cómo? ¿Qué fue lo más divertido de hacer que su Cutebot 'decidiera' qué hacer según el color? ¿Se les ocurren otras reacciones para otros colores?</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 1.5 minutos</h3>
+                            <p>Indica a los alumnos que se junten en parejas, muestren las reacciones de sus Cutebots y expliquen su lógica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien! Con su compañero, muestren cómo su Cutebot reacciona a los diferentes colores. Expliquen: <strong>'Mi Cutebot, cuando ve el color [color], hace [acción]. Lo programé así porque [su razonamiento].'</strong> El compañero debe observar y probar con las tarjetas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Reflexión Final) ⏰ 1.5 minutos</h3>
+                            <p>Guía la retroalimentación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, la retroalimentación. Después de ver al Cutebot de su compañero, díganle: <br>
+                                <strong>* 'Me gustó cómo tu Cutebot reaccionó al color [color específico].'</strong><br>
+                                <strong>* '¡Qué buena 'idea (vibe)' que [acción específica] cuando ve ese color!'</strong><br>
+                                <strong>* 'Para la próxima, podrías intentar que reaccione también al color [nuevo color] haciendo [nueva acción]...'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Gnius STORM (Reflexión Final) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11). Cierra la sesión reforzando cómo la IA permite a los robots percibir, decidir y actuar, y la utilidad de datos adicionales como la posición.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Impresionante! Sus Cutebots ahora no solo 'ven' colores, sino que actúan inteligentemente según lo que ven. Esto es un ejemplo de cómo la IA permite a los robots percibir su entorno y tomar decisiones. Y como mencionamos, la IA puede darnos aún más detalles, como la posición de los objetos, lo que abre un mundo de posibilidades para que los robots interactúen de formas aún más complejas, ¡como seguir una pelota de un color específico! Hoy lograron decir: '<strong>Yo puedo programar mi Cutebot para que, usando la Smart A.I. Lens, reconozca un color específico y realice una acción diferente basada en ese color, utilizando tu plan (el GCS) y una condición SI.</strong>' ¡Han programado robots que deciden con la vista!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
