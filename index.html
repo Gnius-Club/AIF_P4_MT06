@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playbook-P4-TM06</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 10 - 4to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 6 - 4to Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,377 +38,407 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de Aprendizaje:</strong>
-                                    <p>Al final de la sesión, los estudiantes podrán:</p>
-<ul>
-<li>Programar el Cutebot para que reaccione a un color detectado.</li>
-<li>Utilizar la sintaxis "SI leer_lente_IA_color() == 'ROJO'".</li>
-<li>Introducir el concepto de usar información adicional como la posición X.</li>
-<li>profundizarr sobre las limitaciones de la IA Pre-entrenada.</li>
-<li><strong>Objetivo general de la sesión:</strong> Que el Cutebot tome decisiones basadas en la detección de un color y conceptualmente entienda cómo la "visión" de la IA puede incluir posición.</li>
-</ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                    <ul>
-                                        <li><strong>Actividad 1:</strong> Saludo de I.A. con todos</li>
-                                        <li><strong>Actividad 2:</strong> I Can Statement + Ejemplificación</li>
-                                        <li><strong>Actividad 3:</strong> AI GYM</li>
-                                        <li><strong>Actividad 4:</strong> Brain Spark</li>
-                                        <li><strong>Actividad 5:</strong> Gnius STORM (Think-Pair-Share)</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Programa en Micro:bit donde el Cutebot, usando la Smart A.I. Lens, reconoce un color específico (ej. ROJO) y realiza una acción definida (ej. detenerse, encender LEDs), y opcionalmente reacciona a otro color (ej. VERDE) con una acción diferente. Creado a partir de tu plan (el GCS) y lógica condicional SI.</li>
-                                        <li>Participación en la discusión sobre cómo la IA usa información de color y posición para tomar decisiones.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
-                                        <li>Presentación (11 diapositivas).</li>
-                                        <li>Robots Cutebot (1 por cada 2 estudiantes).</li>
-                                        <li>Smart A.I. Lens (1 por cada 2 estudiantes, conectada al Cutebot).</li>
-                                        <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
-                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>), con extensión de A.I. Lens.</li>
-                                        <li>Tarjetas de colores (especialmente ROJO, VERDE, y opcionalmente AZUL, AMARILLO, NEGRO).</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Verificar conexión a internet.</li>
-                                                <li>Confirmar acceso y funcionamiento de MakeCode y la extensión de A.I. Lens.</li>
-                                                <li>Asegurar disponibilidad, carga y conexión de Cutebots, A.I. Lens y Micro:bits.</li>
-                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
-                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
-                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional tu proyecto de ejemplo (Cutebot que al mostrarle una tarjeta roja se detiene y enciende LEDs rojos, y al mostrarle una verde, avanza) para la demostración en la Actividad 2.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> Usar Micro:Bit, Cutebot y Smart A.I. Lens para reaccionar a colores y usar la posición X para controlar el movimiento y comprender los datos espaciales y la privacidad.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Quiero entender cómo una IA no solo ve colores, sino que también puede decir dónde está lo que ve. Explícame cómo funciona la detección con posición (como X) y por qué eso ayuda a un robot a reaccionar mejor. Luego ayúdame a hacer un programa donde el Cutebot reaccione cuando la A.I. Lens vea un color específico y use la posición para decidir si gira o avanza. Al final, quiero que me hagas una pregunta sobre privacidad: si una IA puede seguir objetos, ¿podría seguir personas?</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Datos espaciales: Es la información que le dice a la IA en qué lugar exacto de la pantalla está lo que ve, como si fuera un mapa de coordenadas.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar la cámara inteligente para detectar colores y su posición para mover el robot.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes posiciones del color (izquierda, centro, derecha) para entender cómo cambian los datos.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Micro:Bit + Cutebot + Smart A.I. Lens (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a MakeCode (https://makecode.microbit.org/) con extensión Smart A.I. Lens instalada</label>
+                        <label><input type="checkbox"> Tarjetas de colores para detección</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES en MakeCode</label>
+                        <label><input type="checkbox"> 📋 Para agregar extensión: En MakeCode → Extensiones → Buscar 'AI Lens' → Agregar</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Manipular con cuidado, no golpear, mantener en superficie plana, no tocar el lente de la cámara y verificar batería.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre la detección de posición con IA (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si el robot no responde:</strong> Verificar que la batería esté cargada y bien conectada. Revisar que el micro:bit esté correctamente insertado.</li>
+<li><strong>Si la cámara/lente no reconoce:</strong> Revisar la iluminación del salón (evitar luz directa o muy tenue). Pedir a los alumnos acercar o alejar el objeto para mejorar la lectura.</li>
+<li><strong>Si la cámara/lente no conecta:</strong> Verificar que el cable esté bien conectado. Revisar que la extensión correspondiente esté instalada en MakeCode.</li>
+<li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
-                <p>El chatbot da la bienvenida y anticipa que Cutebot tomará decisiones basadas en lo que "ve".</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 2). Da la bienvenida a los alumnos, recordando la habilidad de la A.I. Lens para ver colores y adelantando el objetivo de hoy. Pídeles que activen a Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hola, artistas de la IA! Ya descubrimos que nuestra <strong>Smart A.I. Lens</strong> puede 'ver' y nombrar colores. Hoy vamos a dar un paso más: ¡haremos que nuestro <strong>Cutebot</strong> no solo vea un color, sino que también tome una <strong>decisión</strong> y <strong>actúe</strong> según el color que detecte! ¿Listos para que <strong>Cutebot</strong> reaccione al mundo con <strong>inteligencia visual</strong>? Antes de empezar, activen a <strong>Xolo</strong>. Salúdenlo en el chat con su nombre y sus gustos. Por ejemplo: <strong>'Hola Xolo, soy [Nombre] y me gustan los semáforos y los coches de juguete'</strong>."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
-                            <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Perfecto! <strong>Xolo</strong> está listo para ayudarnos a programar las reacciones de <strong>Cutebot</strong>. Si alguien no ha recibido respuesta de <strong>Xolo</strong>, levante la mano.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy le daremos ojos inteligentes a sus robots para que sigan rastros!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Visión artificial con posición y seguimiento.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A usar la posición de un objeto para que el Cutebot lo siga automáticamente.</p>
+                        <p><strong>Aplicación real:</strong> Los almacenes inteligentes en empresas de logística usan esta tecnología para que los robots sigan líneas o marcas y transporten paquetes sin chocar.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
-                <p>Presentar cómo Cutebot puede reaccionar a colores específicos y el objetivo de la clase.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Introducción y Contextualización ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 3). Introduce la idea de que Cutebot haga algo especial según el color que vea (ROJO para detenerse, VERDE para avanzar).</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Hemos visto que la <strong>A.I. Lens</strong> nos dice qué color es una tarjeta. Pero, ¿qué tal si queremos que el <strong>Cutebot</strong> haga algo especial solo cuando ve, por ejemplo, el color <strong>ROJO</strong>? O que se mueva hacia el color <strong>AZUL</strong>. Hoy vamos a programar a <strong>Cutebot</strong> para que, cuando su <strong>lente IA</strong> identifique un color específico, realice una <strong>acción</strong>. Por ejemplo, si ve una tarjeta <strong>ROJA</strong>, podría detenerse, o si ve una <strong>VERDE</strong>, podría avanzar.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Presentación del Proyecto del Profesor ⏰ 1 minuto</h3>
-                            <p>Muestra tu proyecto de ejemplo (Cutebot reaccionando a tarjeta roja y verde) ya cargado y funcionando. Esta es una demostración en vivo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Miren este ejemplo que preparé: (Muestra el <strong>Cutebot</strong>. Al presentarle una <strong>tarjeta roja</strong>, se detiene y enciende <strong>LEDs rojos</strong>. Al presentarle una <strong>verde</strong>, <strong>avanza</strong>). Mi 'idea (vibe)' fue que <strong>Cutebot</strong> reaccionara como un semáforo.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
                     </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: "I Can Statement" y Conexión ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 4). Presenta formalmente el 'I Can Statement' y la idea de que la IA puede dar más información (posición).</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo la IA usa coordenadas (como la posición X) para saber si algo está a la izquierda o derecha.</li>
+                            <li>Introduce el concepto de datos espaciales y cómo la IA interpreta el espacio.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar la Smart A.I. Lens para detectar la posición de un color.</li>
+                            <li>Aprender sobre cómo la IA procesa el espacio y la privacidad.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Al final de la clase, podrán decir: '<strong>Yo puedo programar mi Cutebot para que, usando la Smart A.I. Lens, reconozca un color específico y realice una acción diferente basada en ese color, utilizando tu plan (el GCS) y una condición SI.</strong>' Y también empezaremos a pensar cómo la <strong>IA</strong> nos da más información además del color, como la <strong>posición</strong>. ¡A programar reacciones inteligentes!</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar la Smart A.I. Lens para detectar posición y entender los datos espaciales.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Hola a todos! Ahora vamos a entrar a nuestro A.I. Gym. Por favor, abran su chat con XOLO y simplemente salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre cómo los robots 'ven' el espacio y cómo usan esa información para moverse. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Él les explicará cómo la Smart A.I. Lens detecta colores y, lo más importante, cómo sabe en qué posición están para que el robot pueda reaccionar mejor. ¡Pregúntenle todo lo que quieran sobre cómo funciona la visión de su robot y sobre la privacidad!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: AI GYM ⏰ 7 minutos</h2>
-                <p>Introducir la lógica condicional para reaccionar a colores y el concepto de decisión basada en visión IA, incluyendo la información de posición X.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Instrucción Inicial y Contextualización de la IA ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da la instrucción para que los alumnos pidan la información a Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Genios, al <strong>A.I. GYM</strong>! 🧠💪 <strong>Xolo</strong> nos explicará cómo combinar el <strong>reconocimiento de colores</strong> con <strong>condiciones SI</strong> para que <strong>Cutebot</strong> reaccione, y cómo la <strong>IA</strong> puede darnos más pistas como la <strong>posición del color</strong>. Escriban en el chat: <strong>Mi perfil es [escribe aquí tu perfil] y quiero que me enseñes cómo un robot decide usando "visión" de IA que incluye color y posición, qué significa que una IA tenga un "conocimiento limitado". Muéstrame cómo programar al Cutebot para que reaccione a un color específico usando el bloque de lógica "SI leer_lente_IA_color() == 'ROJO'" y cómo usar la información de posición X que provee la A.I. Lens.</strong></p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Interacción Guiada y Ejemplo de Plan (GCS) ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositivas 6 y 7). Monitorea a los alumnos. Xolo les explicará cómo usar `leer_lente_IA_color()` con `SI (condición) ENTONCES (acción)`, y mencionará que la IA también puede dar la posición X del color con `color card(s)' info: X`, útil para saber dónde está el objeto.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los Cutebots y Smart A.I. Lenses conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique el seguimiento de colores por posición.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar la cámara IA y el movimiento del robot.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Conectar la Smart A.I. Lens al Cutebot y probar el seguimiento.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Xolo, quiero inventar un proyecto donde el Cutebot se comporte como si estuviera buscando un color y siguiéndolo cuando se mueva. Ayúdame a crear un VIBE (robot guardián, robot buscador o robot que persigue una pista). Luego transforma esa idea en un GCS que use color y posición para girar y centrarse. Quiero que el GCS parezca un algoritmo real de seguimiento."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">(Mientras los alumnos interactúan con <strong>Xolo</strong>) ¡Muy bien! <strong>Xolo</strong> les está explicando que para que <strong>Cutebot</strong> reaccione a un color, usamos <strong>`leer_lente_IA_color()`</strong> y una <strong>condición `SI`</strong>. Por ejemplo: <strong>`SI (leer_lente_IA_color() == "ROJO") ENTONCES cutebot_detener()`</strong>. Les dirá que esto es una <strong>decisión</strong> basada en la '<strong>visión IA</strong>'. Y algo muy interesante: la <strong>IA</strong> de la lente no solo dice el <strong>color</strong>, ¡sino también dónde está ese <strong>color</strong>! Con <strong>`color card(s)' info: X`</strong>, sabríamos si está a la <strong>izquierda</strong> o <strong>derecha</strong>. Hoy nos enfocaremos en reaccionar al color, ¡pero es bueno saber que la <strong>IA</strong> nos da más pistas!</p>
-                                <p class="dialogue assistant">Para que vean un ejemplo de tu plan (el GCS) reaccionando a dos colores, Xolo podría mostrarles esto:</p>
-                                <pre class="dialogue assistant" style="color: #d32f2f;">
-AL INICIO:
-    Initialize AI-Lens
-    Switch function as Color
-    mostrar texto "Listo!"
-
-POR SIEMPRE:
-    fijar variable "color_actual" a leer_lente_IA_color()
-    SI (variable "color_actual" == "ROJO"):
-        cutebot_detener()
-    SINO SI (variable "color_actual" == "VERDE"):
-        cutebot_avanzar(40)
-    FIN SI
-    ESPERAR 0.1 segundos
-                                </pre>
-                                <p class="dialogue assistant">Si tienen dudas, ¡pregúntenle a Xolo! Por ejemplo: <br>
-                                <strong>'Xolo, ¿qué valores da la posición X?'</strong><br>
-                                <strong>'Si la lente ve una tarjeta azul a la izquierda, ¿cómo lo diría?'</strong> (Relacionar con sus gustos) <br>
-                                <strong>'¿Para qué más serviría saber dónde está un color?'</strong></p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El Cutebot logra girar hacia el color cuando lo mueves?</li>
+                            <li>¿Qué pasa si el color se mueve muy rápido fuera del campo de visión de la lente?</li>
+                            <li>¿Funciona igual el seguimiento con mucha luz que en la sombra?</li>
+                            <li>¿Cómo ayudan los datos espaciales (posición X) a que el robot sepa hacia dónde girar?</li>
+                            <li>Si una IA puede seguir objetos por su posición, ¿qué riesgos de privacidad crees que existen si siguiera personas?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear! Vamos a usar Brain Spark para idear un proyecto increíble. Imaginen que su Cutebot es un robot buscador de tesoros o un guardia que sigue una pista de color. El flujo es simple: platiquen su idea con XOLO, definan el VIBE, obtengan su GCS y pásenlo a bloques en MakeCode. Por ejemplo, podrían hacer un robot que persiga una tarjeta roja como si fuera un imán, girando siempre para mantenerla al centro. Recuerden probar primero en el simulador y luego les entregaré el hardware. No olviden reflexionar sobre las preguntas de experimentación, especialmente sobre la privacidad. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar. ¡A experimentar con esas coordenadas!</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con el seguimiento básico. ¿Puedes enseñarme cómo hacer que mi Cutebot se detenga a una distancia específica usando también la posición o el tamaño del objeto?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
-                <p>Ideación, traducción a tu plan (el GCS), implementación, prueba y discusión sobre la información de posición X.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Introducción al Brain Spark ⏰ 1 minutos</h3>
-                            <p>(Proyectar Diapositiva 8). Presenta la actividad como la fase creativa principal. Recuerda a los alumnos que trabajarán en parejas y compartirán el material.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Tiempo, artistas de la IA! Ahora al <strong>Brain Spark</strong>, donde programarán a <strong>Cutebot</strong> para que actúe según los colores que ve. Recuerden que trabajarán en parejas, así que necesitarán compartir el <strong>Cutebot</strong>, la <strong>A.I. Lens</strong> y el <strong>Micro:bit</strong> para programar y probar.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Ideación (La "idea (vibe)" de Reacción al Color) ⏰ 3 minutos</h3>
-                            <p>Anima a los alumnos a pensar en una 'idea (vibe)' individual de cómo quieren que su Cutebot reaccione a colores específicos. Deberán organizarse con su compañero para turnarse al programar y probar sus respectivas ideas.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">¿Cómo quieren que su <strong>Cutebot</strong> reaccione a los colores? Quizás: 'Quiero que mi <strong>Cutebot</strong> avance cuando vea una tarjeta <strong>VERDE</strong> y se detenga cuando vea una <strong>ROJA</strong>.' O 'Si mi <strong>Cutebot</strong> ve una tarjeta <strong>AZUL</strong>, quiero que encienda sus <strong>LEDs azules</strong> y <strong>gire a la izquierda</strong>.' ¡O pueden inventar un '<strong>clasificador</strong>'! Piensen en su 'idea (vibe)' individual. Luego, hablen con su compañero para organizarse y decidir cómo se turnarán para usar el material para programar y probar cada una de sus ideas. Si necesitan inspiración, consulten a Xolo: <strong>'Exploremos ideas juntos para que Cutebot reaccione a diferentes colores'</strong>."</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Planificación con IA (El "plan (el GCS)") y Logística ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 9). Guía a los alumnos sobre cómo comunicar su 'idea (vibe)' a Xolo para obtener 'tu plan (el GCS)'. Asegúrate de que cada pareja tenga su material y tarjetas de colores.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¿Ya tienen su 'idea (vibe)' de reacción a colores? ¡Genial! Descríbansela a <strong>Xolo</strong>, y él les ayudará a estructurar las <strong>condiciones SI</strong> o <strong>SI...SINO SI...</strong> para los diferentes colores y a crear '<strong>tu plan (el GCS)</strong>'. Por ejemplo, si su 'idea (vibe)' es: 'Reaccionar a ROJO y VERDE'.</p>
-                                <p class="dialogue assistant"><strong>Xolo</strong> podría generar '<strong>tu plan (el GCS)</strong>' así:</p>
-                                <pre class="dialogue assistant" style="color: #d32f2f;">
-AL INICIO:
-    Initialize AI-Lens
-    Switch function as Color
-    mostrar texto "Veo colores!"
-
-POR SIEMPRE:
-    fijar variable "color_visto" a leer_lente_IA_color()
-
-    SI (variable "color_visto" == "ROJO"):
-        cutebot_detener()
-        cutebot_todos_los_led(ROJO)
-    SINO SI (variable "color_visto" == "VERDE"):
-        cutebot_avanzar(50)
-        cutebot_todos_los_led(VERDE)
-    SINO:
-        cutebot_apagar_leds()
-    FIN SI
-
-    ESPERAR 0.2 segundos
-                                </pre>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Implementación, Prueba y Refinamiento (Conceptual sobre Posición X) ⏰ 11 minutos</h3>
-                            <p>Da tiempo a los alumnos para traducir 'tu plan (el GCS)' a bloques, enfocándose en las condiciones SI. Prueban con tarjetas de colores. Luego, guía una discusión sobre la utilidad de la información 'X' de la tarjeta de color (ej. para seguir un objeto de un color).</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡A programar esas reacciones! Tomen '<strong>tu plan (el GCS)</strong>' de <strong>Xolo</strong> y pásenlo a <strong>bloques</strong> en <strong>MakeCode</strong>, enfocándose en las <strong>condiciones SI</strong>. Usen las tarjetas de colores para probar. ¿Reacciona correctamente a cada color? ¿La acción es la que esperaban? Ahora, imaginen que quieren que el <strong>Cutebot</strong> no solo se detenga ante el ROJO, sino que gire hacia él si está un poco a un lado. La <strong>información 'X'</strong> de la tarjeta de color nos ayudaría a saber si <strong>girar a la izquierda</strong> o a la <strong>derecha</strong>. Aunque no lo programemos hoy, ¿se les ocurre cómo podría ser útil saber dónde está el color? (Ej. para <strong>seguir un objeto</strong> de un color). Recuerden turnarse.</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué colores y posiciones detecta bien su Cutebot.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 5: Mejoras y Desafíos ⏰ 1 minutos</h3>
-                            <p>Ofrece desafíos adicionales.</p>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué movimientos realizó mejor tu Cutebot al seguir el color? ¿Qué te sorprendió de cómo usa la posición X?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¿Su <strong>Cutebot</strong> ya toma decisiones basadas en colores? ¡Fantástico! Para un desafío extra: ¿Pueden añadir reacciones para más colores? ¿O hacer que la <strong>velocidad</strong> del <strong>Cutebot</strong> cambie según el color que ve? ¡Consulten con <strong>Xolo</strong> cómo podrían modificar '<strong>tu plan (el GCS)</strong>'!</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi Cutebot siguió el color usando la posición X para girar. Me sorprendió que detectara el movimiento tan rápido."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
-                <p>Los alumnos muestran cómo sus Cutebots reaccionan a colores y reflexionan sobre la IA y la información de posición.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 10). Presenta la actividad.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Tiempo, programadores de robots con visión! Han hecho un gran trabajo en el <strong>Brain Spark</strong>. Ahora, en nuestro <strong>Gnius STORM</strong>, vamos a ver cómo sus <strong>Cutebots</strong> reaccionan inteligentemente a los colores.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 0.5 minutos</h3>
-                            <p>Reflexión individual.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Antes de mostrarlo, piensen 30 segundos: <strong>¿Qué colores hace reaccionar a su <strong>Cutebot</strong> y cómo? ¿Qué fue lo más divertido de hacer que su <strong>Cutebot</strong> '<strong>decidiera</strong>' qué hacer según el color? ¿Se les ocurren otras reacciones para otros colores?</strong></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 1.5 minutos</h3>
-                            <p>Indica a los alumnos que se junten en parejas, muestren las reacciones de sus Cutebots y expliquen su lógica.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Muy bien! Con su compañero, muestren cómo su <strong>Cutebot</strong> reacciona a los diferentes colores. Expliquen: <strong>'Mi Cutebot, cuando ve el color [color], hace [acción]. Lo programé así porque [su razonamiento].'</strong> El compañero debe observar y probar con las tarjetas.</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Gnius STORM (Reflexión Final) ⏰ 1.5 minutos</h3>
-                            <p>Guía la retroalimentación.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, la retroalimentación. Después de ver al <strong>Cutebot</strong> de su compañero, díganle: <br>
-                                <strong>'Me gustó cómo tu Cutebot reaccionó al color [color específico].'</strong><br>
-                                <strong>'¡Qué buena 'idea (vibe)' que [acción específica] cuando ve ese color!'</strong><br>
-                                <strong>'Para la próxima, podrías intentar que reaccione también al color [nuevo color] haciendo [nueva acción]...'</strong></p>
-                            </div>
-                        </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
                     </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 5: Gnius STORM (Reflexión Final) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 11). Cierra la sesión reforzando cómo la IA permite a los robots percibir, decidir y actuar, y la utilidad de datos adicionales como la posición.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Impresionante! Sus <strong>Cutebots</strong> ahora no solo 'ven' colores, sino que actúan inteligentemente según lo que ven. Esto es un ejemplo de cómo la <strong>IA</strong> permite a los robots <strong>percibir</strong> su entorno y <strong>tomar decisiones</strong>. Y como mencionamos, la <strong>IA</strong> puede darnos aún más detalles, como la <strong>posición</strong> de los objetos, lo que abre un mundo de posibilidades para que los robots interactúen de formas aún más complejas, ¡como <strong>seguir una pelota</strong> de un color específico! Hoy lograron decir: '<strong>Yo puedo programar mi Cutebot para que, usando la Smart A.I. Lens, reconozca un color específico y realice una acción diferente basada en ese color, utilizando tu plan (el GCS) y una condición SI.</strong>' ¡Han programado robots que deciden con la vista!</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
